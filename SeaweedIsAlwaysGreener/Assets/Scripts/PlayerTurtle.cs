@@ -60,9 +60,12 @@ public class PlayerTurtle : MonoBehaviour
 
     public void TurtleBite()
     {
-        GameOverStatus = true;
-        GameWinLoseStatus = false;
-        Destroy(gameObject);
+        if (tookHaven != true)
+        {
+            GameOverStatus = true;
+            GameWinLoseStatus = false;
+            Destroy(gameObject);
+        }
     }
     public bool GetGameOver()
     {
