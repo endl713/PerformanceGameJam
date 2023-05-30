@@ -42,7 +42,7 @@ public class PlayerTurtle : MonoBehaviour
     private bool setMove = false;
     private bool tookHaven = false;
     private float timeInHaven = 0.0f;
-    private readonly float timeMinInHaven = 0.5f;
+    private readonly float timeMinInHaven = 1.0f;
 
     private Animator turtleAnimator;
 
